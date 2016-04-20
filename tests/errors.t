@@ -10,9 +10,9 @@ Add some test tasks:
 Bad prefix:
 
   $ xt -f BAD
-  The ID "BAD" does not match any task.%
+  The ID "BAD" does not match any task.
   $ xt -e BAD This should not be replaced.
-  The ID "BAD" does not match any task.%
+  The ID "BAD" does not match any task.
   $ xt
   3 - Sample one.
   7 - Sample two.
@@ -34,9 +34,9 @@ Ambiguous identifiers:
   $ xt 13
   $ xt 14
   $ xt -f 1
-  The ID "1" matches more than one task.%
+  The ID "1" matches more than one task.
   $ xt -f e This should not be replaced.
-  The ID "e" does not match any task.%
+  The ID "e" does not match any task.
   $ xt
   0  - 9
   17 - 11
@@ -103,9 +103,9 @@ Even more ambiguity:
   fa  - 14
   fe  - 8
   $ xt -f b1
-  The ID "b1" matches more than one task.%
+  The ID "b1" matches more than one task.
   $ xt -e b1
-  The ID "b1" matches more than one task.%
+  The ID "b1" matches more than one task.
   $ xt
   07  - 8test
   0a  - 9

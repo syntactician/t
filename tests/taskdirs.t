@@ -16,9 +16,9 @@ Initialize multiple task directories:
 Wrong directories:
 
   $ xt --task-dir beer -f 0
-  The ID "0" does not match any task.%
+  The ID "0" does not match any task.
   $ xt --task-dir books -f 7
-  The ID "7" does not match any task.%
+  The ID "7" does not match any task.
   $ xt --task-dir beer
   7 - Dogfish Head 120 minute IPA
   $ xt --task-dir books
