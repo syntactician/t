@@ -67,8 +67,8 @@ a merge conflict because the list is sorted.
 Installing t
 ------------
 
-`t` requires [Python][] 2.5 or newer, and some form of UNIX-like shell (bash
-works well).  It works on Linux, OS X, and Windows (with [Cygwin][]).
+`t` requires [Python][] 3, and some form of UNIX-like shell (bash works well).
+It works on Linux, OS X, and Windows (with [Cygwin][]).
 
 [Python]: http://python.org/
 [Cygwin]: http://www.cygwin.com/
