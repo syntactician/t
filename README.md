@@ -88,7 +88,7 @@ Create that directory:
 Finally, set up an alias to run `t`.  Put something like this in your
 `~/.bashrc` file:
 
-    alias t='python ~/path/to/t.py --task-dir ~/tasks --list tasks'
+    alias t='python3 ~/path/to/t.py --task-dir ~/tasks --list tasks'
 
 Make sure you run `source ~/.bashrc` or restart your terminal window to make
 the alias take effect.
@@ -154,7 +154,7 @@ If you keep your task list in a visible place (like your desktop) you might
 want it to be deleted if there are no tasks in it.  To do this automatically
 you can use the `--delete-if-empty` option in your alias:
 
-    alias t='python ~/path/to/t.py --task-dir ~/Desktop --list todo.txt --delete-if-empty'
+    alias t='python3 ~/path/to/t.py --task-dir ~/Desktop --list todo.txt --delete-if-empty'
 
 Tips and Tricks
 ---------------
@@ -187,9 +187,9 @@ Now you've got a prompt that looks something like this:
 sometimes it's useful to be able to have at least *one* level of organization.
 To split up your tasks into different lists you can add a few more aliases:
 
-    alias g='python ~/path/to/t.py --task-dir ~/tasks --list groceries'
-    alias m='python ~/path/to/t.py --task-dir ~/tasks --list music-to-buy'
-    alias w='python ~/path/to/t.py --task-dir ~/tasks --list wines-to-try'
+    alias g='python3 ~/path/to/t.py --task-dir ~/tasks --list groceries'
+    alias m='python3 ~/path/to/t.py --task-dir ~/tasks --list music-to-buy'
+    alias w='python3 ~/path/to/t.py --task-dir ~/tasks --list wines-to-try'
 
 ### Distributed Bugtracking
 
@@ -198,7 +198,7 @@ want to use such a heavyweight system?  You can use `t` instead.
 
 Add another alias to your `~/.bashrc` file:
 
-    alias b='python ~/path/to/t.py --task-dir . --list bugs'
+    alias b='python3 ~/path/to/t.py --task-dir . --list bugs'
 
 Now when you're in your project directory you can use `b` to manage the list of
 bugs/tasks for that project.  Add the `bugs` file to version control and you're
