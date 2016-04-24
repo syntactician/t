@@ -1,6 +1,6 @@
 Setup:
 
-  $ alias xt="python2 $TESTDIR/../../t.py --task-dir `pwd` --list test"
+  $ alias xt="python $TESTDIR/../../t.py --task-dir `pwd` --list test"
 
 Replace a task's text (preserving the ID):
 
@@ -9,24 +9,24 @@ Replace a task's text (preserving the ID):
   a - Sample.
   $ xt -e a New sample.
   $ xt
-  a - New sample.
+  d - New sample.
   $ xt 'this | that'
   $ xt
   4 - this | that
-  a - New sample.
+  d - New sample.
   $ xt -e 4 'this &| that'
   $ xt
-  4 - this &| that
-  a - New sample.
+  d1 - this &| that
+  df - New sample.
 
 Sed-style substitution:
 
-  $ xt -e a 's/New/Testing/'
+  $ xt -e df 's/New/Testing/'
   $ xt
-  4 - this &| that
-  a - Testing sample.
-  $ xt -e 4 '/this &/this /'
+  d - this &| that
+  f - Testing sample.
+  $ xt -e d '/this &/this /'
   $ xt
   4 - this | that
-  a - Testing sample.
+  f - Testing sample.
 
